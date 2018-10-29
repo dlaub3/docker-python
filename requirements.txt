@@ -1,5 +1,8 @@
 wheel
 flask
 uwsgi
-psycopg2
+psycopg2-binary
 healthcheck
+SQLAlchemy
+Flask-WTF
+Flask-Migrate
