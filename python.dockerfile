@@ -7,10 +7,10 @@ COPY requirements.txt ./
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["python", "app.py"]
+# CMD ["python", "app.py"]
 
-# CMD [ "uwsgi", "--socket", "app.sock", \
-#                "--uid", "1000", \
-#                "--plugins", "python3", \
-#                "--protocol", "uwsgi", \
-#                "--wsgi", "wsgi:app" ]
+CMD [ "uwsgi", "--socket", "app.sock", \
+  "--uid", "1000", \
+  "--plugins", "python3", \
+  "--protocol", "uwsgi", \
+  "--wsgi", "wsgi:app" ]
