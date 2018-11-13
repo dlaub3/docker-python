@@ -2,3 +2,4 @@ app
 app-backend
 app-frontend
 postgres
+.vscode
